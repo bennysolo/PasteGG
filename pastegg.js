@@ -2,7 +2,7 @@ const PasteGG = async (nama, teks) => {
 if (!teks) return 'Masukan parameter teks!'
 if (!nama) return 'Masukan parameter nama!'
  const pastean = await fetchJson(`https://api-self.herokuapp.com/api/pastegg?teks=${teks}&nama=${nama}`, {method: 'get'})
- return anu.pastean.url
+ return pastean.result.url
  }
  
 case 'pastegg' :
